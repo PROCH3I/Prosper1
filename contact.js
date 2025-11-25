@@ -1,6 +1,6 @@
 // Select the form
 document.querySelector(".contact_info").addEventListener("submit", function(event) {
-    event.preventDefault(); // prevent page reload
+    event.preventDefault(); // stop form from refreshing
 
     // Collect form values
     let fullname = event.target.elements["fullname"].value.trim();
@@ -8,21 +8,25 @@ document.querySelector(".contact_info").addEventListener("submit", function(even
     let email = event.target.elements["email"].value.trim();
     let message = event.target.elements["message"].value.trim();
 
-    // Validation
+    // === VALIDATION SECTION ===
+
+    // 1. Check if all required fields are filled
     if (!fullname || !phone || !email || !message) {
-        alert("Please fill in all required fields.");
+        alert("Fill in all required information");
         return;
     }
 
-    // Optional: validate phone number (simple)
-    if (!/^\d{7,15}$/.test(phone)) {
-        alert("Please enter a valid phone number (7-15 digits).");
+    // 2. Validate phone number (digits only + length 7–15)
+    let phonePattern = /^\d{7,15}$/;
+    if (!phonePattern.test(phone)) {
+        alert("Please enter a valid phone number (7–15 digits only).");
         return;
     }
 
-    // Optional: validate email (simple)
-    if (!email.includes("@") || !email.includes(".")) {
-        alert("Please enter a valid email address.");
+    // 3. Validate email structure
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address (must contain @ and .).");
         return;
     }
 
