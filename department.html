@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="logo.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="hero.css" />
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="department.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,10 +19,40 @@
     />
   </head>
   <body>
-    <div id="header"></div>
+
+    <header>
+  <div class="logo">
+    <a href="#">Departments</a>
+  </div>
+  <nav>
+    <ul class="desktop_menu">
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+  <div class="toogle_btn" style="color: white">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <div class="mobile_menu">
+      <li><a href="index.html">Home</a></li>
+  </div>
+</header>
 
     
-    
+    <section class="department-register">
+
+  <form class="dept-form">
+
+    <div class="form-row">
+      <label>Department</label>
+      <input type="text" name="department" placeholder="Department" required>
+    </div>
+
+
+    <button type="create" class="create-btn">Create</button>
+
+  </form>
+</section>
+
     <div id="footer"></div>
     <script src="header.js"></script>
     <script src="footer.js"></script>
