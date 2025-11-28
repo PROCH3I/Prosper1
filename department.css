@@ -1,11 +1,9 @@
 .department-register {
   width: 100%;
   display: flex;
-  justify-content: center;
   padding: 100px 0;
-  padding-top: 175px;
+  padding-top: 100px;
   background: #f8f9fa;
-  align-items: center;
 }
 
 .dept-form {
