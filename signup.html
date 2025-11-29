@@ -44,7 +44,7 @@
   <form class="signup-form">
 
     <!-- Identity selector -->
-    <label for="identity" class="identity0">Who are you?</label>
+    <label for="identity" class="identity0">Are you a Lecturer/Student?</label>
     <select id="identity" name="identity" required>
         <option value="">Select Identity</option>
         <option value="student">Student</option>
@@ -56,49 +56,49 @@
     <div id="student-fields" class="hidden">
 
         <div class="row">
-            <div class="input-group1">
-              <label>Name</label>
-              <input type="text" name="stu_fullname" placeholder="Name" required>
-            </div>
+            
+              <label for="stu_fullname">Name:<input type="text" name="stu_fullname" placeholder="Name" required></label>
+              
+            
         </div>
 
         <div class="row">
-            <div class="input-group1">
-              <label>Level</label>
-              <select name="stu_level" required>
+            
+              <label for="stu_level">Level:<select name="stu_level" required>
                   <option value="">Select Level</option>
                   <option value="100">100 Level</option>
                   <option value="200">200 Level</option>
                   <option value="300">300 Level</option>
                   <option value="400">400 Level</option>
                   <option value="500">500 Level</option>
-                  <option value="500">600 Level</option>
-              </select>
-            </div>
+                  <option value="600">600 Level</option>
+              </select></label>
+              
+            
         </div>
 
         <div class="row">
-            <div class="input-group1">
-                <label>Department</label>
-                <input type="text" name="stu_dept" placeholder="Department" required>
-            </div>
+            
+                <label for="stu_dept">Department:<input type="text" name="stu_dept" placeholder="Department" required></label>
+                
+            
         </div>
 
         <div class="row">
-          <div class="input-group1">
-            <label>Phone No.</label>
-            <input type="tel" name="stu_phone" placeholder="Phone No." pattern="[0-9]{7,15}" required>
-          </div>
+          
+            <label for="stu_phone">Phone No.:<input type="tel" name="stu_phone" placeholder="Phone No." pattern="[0-9]{7,15}" required></label>
+            
+          
         </div>
 
         <div class="row">
-          <div class="input-group1">
-            <label>Email</label>
-            <input type="email" name="stu_email" placeholder="Email" required>
-          </div>
+          
+            <label for="stu_email" style="float: left;">Email:<input type="email" name="stu_email" placeholder="Email" required>
+          </label>
+            
         </div>
 
-        <button type="submit" class="register-btn">Register</button>
+        <a href="#submit" class="register-btn">Register</a>
 
     </div>
 
@@ -108,24 +108,24 @@
     <div id="lecturer-fields" class="hidden">
 
         <div class="row">
-            <div class="input-group1">
+            
               <label>Name</label>
               <input type="text" name="lec_name" placeholder="Name" required>
-            </div>
+            
         </div>
 
         <div class="row">
-          <div class="input-group1">
+          
             <label>Email</label>
             <input type="email" name="lec_email" placeholder="Email" required>
-          </div>
+          
         </div>
 
         <div class="row">
-          <div class="input-group1">
+          
             <label>Phone No.</label>
             <input type="tel" name="lec_phone" placeholder="Phone No." pattern="[0-9]{7,15}" required>
-          </div>
+          
         </div>
 
         <button type="submit" class="submit-btn">Submit</button>
