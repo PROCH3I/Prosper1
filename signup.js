@@ -20,3 +20,4 @@ identity.addEventListener("change", function () {
         lecturerFields.style.display = "none";
     }
 });
+
